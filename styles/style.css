@@ -21,21 +21,44 @@
   color: var(--text-color);
   background-image: repeating-linear-gradient(
       to right,
-      var(--bg-st-color) 0 2px,
+      var(--lg-st-color) 0 2px,
       transparent 2px 4px
     ),
     repeating-linear-gradient(
       to top,
-      var(--bg-st-color) 0 2px,
+      var(--lg-st-color) 0 2px,
       transparent 2px 4px
     ),
     linear-gradient(
       to bottom,
-      var(--bg-color) 0.01%,
-      var(--bg-en-color)
+      var(--lg-color) 0.01%,
+      var(--lg-en-color)
     );
-
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 102px auto;
+  border: 2px solid var(--border-color);
+  max-inline-size: 700px;
+  background-color: var(--page-bg);
+  font-family: var(--main-font);
+  text-transform: uppercase;
+ 
+}
+
+.header__logo {
+  margin: 144px 0 20px 0;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  text-decoration: none;
+}
+
+.header__title {
+  font-size: clamp(0.9rem, 0.6769rem + 0.8451vw, 1.5rem);
+}
+

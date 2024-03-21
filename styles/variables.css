@@ -5,9 +5,11 @@
 	--title-font-weight: 700;
 	--text-font-weight: 400;
 	--text-color: #000;
-	--bg-st-color: #d3d3d3;
-	--bg-color: #e7e7e7;
-	--bg-en-color: #1a1a1a;
+	--lg-st-color: #d3d3d3;
+	--lg-color: #e7e7e7;
+	--lg-en-color: #1a1a1a;
+	--border-color: #000;
+	--page-bg: #fff; 
 
 	
 

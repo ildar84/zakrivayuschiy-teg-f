@@ -9,21 +9,21 @@
 	--title-font-weight: 700;
 	--text-font-weight: 400;
 	--page-bg: #fff; 
-	--bg-st-color: #d3d3d3;
-	--bg-color: #e7e7e7;
-	--bg-en-color: #1a1a1a;
+	--lg-st-color: #d3d3d3;
+	--lg-color: #e7e7e7;
+	--lg-en-color: #1a1a1a;
 	--text-color: #000;
-
+	--border-color: #000;
 
 }
 
 :root.theme-dark {
 	--title-font-weight: 785;
 	--text-font-weight: 465;
-  --page-bg: #000;
-	--bg-st-color: #000;
-	--bg-color: #007f0c;
-	--bg-en-color: #004306;
+    --page-bg: #000;
+	--lg-st-color: #000;
+	--lg-color: #007f0c;
+	--lg-en-color: #004306;
 	--text-color: #00cc14; 
-  
+	--border-color: #00CC14;
 }
