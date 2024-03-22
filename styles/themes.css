@@ -14,7 +14,7 @@
 	--lg-en-color: #1a1a1a;
 	--text-color: #000;
 	--border-color: #000;
-
+	--label-color: #fff; 
 }
 
 :root.theme-dark {
@@ -26,4 +26,5 @@
 	--lg-en-color: #004306;
 	--text-color: #00cc14; 
 	--border-color: #00CC14;
+	--label-color: #000; 
 }
