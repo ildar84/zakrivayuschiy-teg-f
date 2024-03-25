@@ -17,6 +17,7 @@
 	--label-color: #fff;
 	--button-text-color: #fff;
 	
+	
 }
 
 :root.theme-dark {
@@ -30,5 +31,6 @@
 	--border-color: #00CC14;
 	--label-color: #000; 
 	
-	--button-text-color: #00CC14; 
+	--button-text-color: #00CC14;
+	 
 }
