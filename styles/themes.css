@@ -16,6 +16,7 @@
 	--border-color: #000;
 	--label-color: #fff;
 	--button-text-color: #fff;
+	--button-color: #000;
 	
 	
 }
@@ -32,5 +33,6 @@
 	--label-color: #000; 
 	
 	--button-text-color: #00CC14;
+	--button-color: #00CC14;
 	 
 }
