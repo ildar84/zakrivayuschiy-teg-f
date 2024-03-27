@@ -173,6 +173,34 @@
   inline-size: 100%;
 }
 
+.grayscale {
+  filter: grayscale(50%);
+}
+
+.saturate {
+  filter: saturate(300%);
+}
+
+.hue-rotate {
+  filter: hue-rotate(40deg);
+}
+
+.sepia {
+  filter: sepia(75%);
+}
+
+.invert {
+  filter: invert(30%);
+}
+
+.contrast {
+  filter: contrast(50%);
+}
+
+.set__filter {
+  filter: blur(2px) brightness(55%) grayscale(40%) invert(10%) sepia(20%);
+}
+
 .card__label {
   position: absolute;
   z-index: 1;
@@ -186,7 +214,6 @@
   mix-blend-mode: hard-light;
   right: 25px;
   top: 25px;
-  
 }
 
 @supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
