@@ -37,6 +37,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  font-variation-settings: 'wght' var(--text-font-weight);
 }
 
 .header {
@@ -52,7 +53,7 @@
 }
 
 .header__logo {
-  margin: 136px 0 20px 0;
+  margin: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 0 20px 0;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-decoration: none;
 }
@@ -156,7 +157,7 @@
   font-family: var(--main-font);
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-variation-settings: 'wght' var(--title-font-weight);
   line-height: normal;
   padding: 5px 10px;
 }
@@ -230,7 +231,6 @@
   font-family: var(--main-font);
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 21px;
 }
 
@@ -273,7 +273,6 @@
   font-family: var(--accent-font);
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
   line-height: 90%;
   border: 2px solid var(--border-color);
   background: var(--page-bg);
@@ -328,7 +327,6 @@
   font-family: var(--accent-font);
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
   line-height: 90%;
   padding: 13px 22px;
   cursor: pointer;
@@ -378,7 +376,6 @@
   font-family: var(--accent-font);
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
   line-height: 150%; /* 21px */
   text-transform: uppercase;
 }
@@ -397,7 +394,6 @@
   font-family: var(--accent-font);
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
   line-height: 150%; /* 21px */
   text-transform: uppercase;
   padding-right: 25px;
@@ -411,7 +407,6 @@
   font-family: var(--accent-font);
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
   line-height: 90%; /* 12.6px */
   text-transform: uppercase;
   cursor: pointer;
@@ -420,22 +415,20 @@
   background: var(--page-bg);
 }
 
-.save__button {
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin: 0 auto 105px auto;
-  background: var(--page-bg);
-  border: 2px solid var(--border-color);
-  font-family: var(--accent-font);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 90%;
-  padding: 13px 22px;
-  cursor: pointer;
-  overflow: auto;
+@media (width <= 375px) {
+  .save__button {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    min-block-size: 80px;
+  }
+
+  .save__button .floppy__image {
+    width: 35px;
+    height: 28px;
+  }
 }
+
 
 
 
