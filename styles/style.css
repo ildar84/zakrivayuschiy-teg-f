@@ -238,10 +238,13 @@
   grid-column: span 2;
 }
 
-.card__text-my {
+.card__text:first-child {
+  padding-block-end: 25px;   
+}
+/* .card__text-my {
   grid-column: span 2;
   padding-top: 24px;    
-}
+} */
 
 .card__button-container {
   grid-column: 2;
