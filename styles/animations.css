@@ -23,15 +23,15 @@
 }
 
 .main-body {
-	transition: fill 0.3s linear 0.05s;
-}
-
-.core {
 	transition: fill 0.3s linear;
 }
 
+.core {
+	transition: fill 0.3s linear 0.03s;
+}
+
 .contour {
-	transition: fill 0.3s linear 0.07s;
+	transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon:hover .main-body {
@@ -85,15 +85,16 @@
 
 .like-icon.is-liked .contour {
 	fill: var(--heart-color);
+	transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked .heart {
 	transform-origin: center center;
-	animation: heartWidth 0.3s ease-in 0.1s 2 alternate;
+	animation: heartWidth 0.3s ease-in 0.1s 1 alternate;
 }
   
 .like-icon.is-liked .sparks {
-	animation: sparks 0.3s ease-in 0.3s 2 alternate;
+	animation: sparks 0.3s ease-in 0.3s 1 alternate;
 }
 
 
