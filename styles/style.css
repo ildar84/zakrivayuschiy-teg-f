@@ -247,8 +247,8 @@
 .card__icon-button {
   grid-column: 1;
   justify-self: end;
-  /* width: 36px;
-  height: 36px; */
+  width: 43px;
+  height: 38px;
   align-self: center;
   border: 2px solid transparent;
   background-color: transparent; 
@@ -257,16 +257,21 @@
 
 .like-icon {
   width: 39px;
-  height: 36px;
+  height: 35px;
   cursor: pointer;
 }
 
 .card__like-button {
   grid-column: 2;
   justify-self: end;
-  min-inline-size: 130px;
-  min-block-size: 38px;
+  inline-size: 130px;
+  block-size: 38px;
   padding: 9px 17px;
+}
+
+button {
+  padding-block: 0;
+  padding-inline: 0;
 }
 
 .button__base {
@@ -311,16 +316,15 @@
 }
 
 .save__button {
+  position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
   margin: 0 auto 105px auto;
   padding: 13px 22px;
 }
 
-.floppy__image {
-  width: 28px;
-  height: 28px;
-  
+.floppy {
   color: var(--button-text-color);
   mix-blend-mode: difference;
 }
@@ -367,10 +371,10 @@
   margin: 0 auto;
 }
 
-.dialog .floppy__image {
-  width: 45px;
-  height: 45px;
-  padding: 0; 
+.dialog__text .floppy__dialog {
+  width: 60px;
+  height: 60px;
+  /* padding: 0;  */
 }
 
 .dialog__title {
@@ -406,7 +410,7 @@
     min-block-size: 80px;
   }
 
-  .save__button .floppy__image {
+  .floppy {
     width: 35px;
     height: 28px;
   }
