@@ -252,7 +252,7 @@
   align-self: center;
   border: 2px solid transparent;
   background-color: transparent; 
-  transition: var(--border-color) 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 
 .like-icon {
@@ -284,7 +284,7 @@ button {
   background: var(--page-bg);
   cursor: pointer; 
   overflow: auto;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease;
 }
 
 .button__text {
@@ -321,12 +321,13 @@ button {
   justify-content: center;
   align-items: center;
   margin: 0 auto 105px auto;
-  padding: 13px 22px;
+  padding: 10px 23px;
 }
 
 .floppy {
   color: var(--button-text-color);
   mix-blend-mode: difference;
+  margin-top: 5px;
 }
 
 .card__icon-button:focus-visible {
@@ -401,6 +402,10 @@ button {
 }
 
 @media (width <= 375px) {
+  .card__label {
+    right: 11px;
+  }
+
   .save__button {
     display: flex;
     flex-direction: column;
@@ -415,7 +420,6 @@ button {
 
   .dialog {
     inline-size: 340px;
-    block-size: 195px;
     padding: 31px 41px;
   }
 
